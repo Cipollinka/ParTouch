@@ -11,8 +11,8 @@ workflows:
         XCODE_SCHEME: "ParTouch" # <----
         BUNDLE_ID: "com.partouch.app" # <----
         APP_STORE_APP_ID: 6738984992 # <----
-        APP_STORE_CONNECT_KEY_ID: "$APP_STORE_CONNECT_KEY_ID" # <----
-        APP_STORE_CONNECT_ISSUER_ID: "$APP_STORE_CONNECT_ISSUER_ID" # <----
+        APP_STORE_CONNECT_KEY_ID: "2VBQW77AZH" # <----
+        APP_STORE_CONNECT_ISSUER_ID: "747e5463-1ce1-43cb-b963-61216d8ab73b" # <----
         node: latest
         xcode: latest
         cocoapods: default
