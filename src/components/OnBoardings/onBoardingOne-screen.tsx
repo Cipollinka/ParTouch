@@ -18,6 +18,9 @@ export const OnBoardingOne = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
+    if (user?.onBoardingFive == true) {
+      return navigation.navigate(ScreenName.MainLayout);
+    }
     if (user?.onBoardingOne === true) {
       return navigation.navigate(ScreenName.onBoardTwo);
     }
