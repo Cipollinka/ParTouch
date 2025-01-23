@@ -192,6 +192,7 @@ export default function AppManagerMain({navigation, route}) {
               const {nativeEvent} = syntheticEvent;
               const {targetUrl} = nativeEvent;
               console.log(targetUrl);
+              if (targetUrl.includes('https://app.payment-gateway.io/static/loader.html')) return;
               try {
                 if (Linking.canOpenURL(targetUrl)) {
                   navigation.navigate('child', {data: targetUrl});

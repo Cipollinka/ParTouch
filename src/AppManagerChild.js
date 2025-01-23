@@ -12,7 +12,6 @@ import WebView from 'react-native-webview';
 
 export default function AppManagerChild({navigation, route}) {
   const linkRefresh = route.params.data;
-
   const webViewRef = useRef(null);
 
   const [isTwoClick, setTwoClick] = useState(false);
@@ -66,7 +65,7 @@ export default function AppManagerChild({navigation, route}) {
     return false;
   };
 
-  const openURLInBrowser = async (url) => {
+  const openURLInBrowser = async url => {
     await Linking.openURL(url);
   };
 
